@@ -1,0 +1,164 @@
+.App {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: lightgrey;
+  height: 100px;
+  border-bottom: black solid 3px;
+}
+
+h1 {
+  margin: 0 auto;
+  padding-top: 36px;
+}
+
+button {
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  right: 2%;
+  top: 36px;
+  background-color: white;
+  border: 4px double black;
+  color: black;
+  text-align: center;
+}
+
+#page-wrap {
+  text-align: center;
+
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: white;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.35vw;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  margin: 0 50px;
+}
+
+figure {
+  margin-left: 0;
+  width: 45%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section p {
+  font-size: 1.9vw;
+}
+
+#paragraphe {
+  display: block;
+}
+
+#paragraphe p {
+  font-size: 1.4vw;
+}
+
+.box_img_click {
+  border: 2px solid black;
+  margin: 50px;
+  width: 200px;
+  display: inline-block;
+}
+
+hr {
+  width: 200px;
+  text-align: left;
+  margin-left: 0;
+}
+
+#Accueil,
+#Contact {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+footer {
+  padding: 10px 10px 10px 10px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  background: #b8b7ad;
+}
