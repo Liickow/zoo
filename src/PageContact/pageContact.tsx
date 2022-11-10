@@ -19,7 +19,7 @@ class Page extends React.Component<any,any> {
         <IMG
           source="https://images.pexels.com/photos/146080/pexels-photo-146080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="titre"
-          title="Leo P."
+          title="Léo P."
           lien="leo.paugaum@univ-brest.fr"
         />
         <IMG
