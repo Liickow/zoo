@@ -5,16 +5,52 @@ import Image from "./image";
 import Information from "./information";
 
 class PageAffichage extends React.Component<any,any> {
+<<<<<<< HEAD
   render() {
     return (
       <body>
         <main>
           <FilDariane valeurs={this.props.chemin} hrefs={this.props.hrefs} />
+=======
+  state = {apiInfo:[],chemin:""}
+  componentDidMount(){
+    let urlService = "";
+    let id = window.location.href.split('/').slice(-1);
+    if(this.props.type === "espece"){
+      urlService = "http://obiwan.univ-brest.fr:7040/especes/par_id/";
+      this.setState({chemin:"Famille,Espèce,"});
+    }else if(this.props.type === "famille"){
+      urlService = "http://obiwan.univ-brest.fr:7160/famille/par_id/";
+      this.setState({chemin:"Famille,"});
+    }else if(this.props.type === "zoo"){
+      urlService = "http://obiwan.univ-brest.fr:7050/zoo/par_id/";
+      this.setState({chemin:"Pays,Zoo,"});
+    }else if(this.props.type === "individu"){
+      urlService = "http://obiwan.univ-brest.fr:7080/individu/par_id/";
+      this.setState({chemin:"Pays,Zoo,Individu,"});
+    }
+    urlService = urlService + id;
+    fetch(urlService) .then((response) => response.json())
+                      .then((responseJson) => { this.setState({apiInfo:Object.values(responseJson[0])});})
+                      .catch((error) => { console.error(error); }); 
+  }
+  render() {
+    console.log(this.state.apiInfo);
+    console.log(window.location.href);
+    return (
+      <body>
+        <main>
+          <FilDariane valeurs={this.state.chemin} hrefs={this.props.hrefs} />
+>>>>>>> 3f5aae0 (oui)
           <section>
             <Image source={this.props.image} />
             <Information
               type={this.props.type}
+<<<<<<< HEAD
               infos={this.props.informations}
+=======
+              infos={this.state.apiInfo}
+>>>>>>> 3f5aae0 (oui)
             />
           </section>
           <section id="paragraphe">

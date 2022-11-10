@@ -2,9 +2,16 @@ import React from "react";
 
 class Information extends React.Component<any,any> {
   render() {
+<<<<<<< HEAD
     let liste = [];
     let intitules: string | any[] = [];
     let infos = this.props.infos.split(",");
+=======
+    console.log(typeof(this.props.infos));
+    let liste = [];
+    let intitules: string | any[] = [];
+    let infos = this.props.infos;
+>>>>>>> 3f5aae0 (oui)
     if (this.props.type === "espece") {
       intitules = [
         "Nom",
