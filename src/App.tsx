@@ -19,10 +19,6 @@ function App() {
             path="/espece/:id"
             element={
               <PageAffichage
-<<<<<<< HEAD
-                chemin="Famille,Espèce,Panda Géant"
-=======
->>>>>>> 3f5aae0 (oui)
                 hrefs="/,/,/"
                 image="https://cdn.pixabay.com/photo/2018/10/16/14/48/panda-3751598_960_720.jpg"
                 type="espece"
@@ -36,10 +32,6 @@ function App() {
             path="/zoo/:id"
             element={
               <PageAffichage
-<<<<<<< HEAD
-                chemin="Pays,Zoo,Beauval"
-=======
->>>>>>> 3f5aae0 (oui)
                 hrefs="/,/,/"
                 image="https://st4.depositphotos.com/5092343/39033/i/450/depositphotos_390338944-stock-photo-beauval-zoo-park-signboard.jpg"
                 type="zoo"
@@ -53,10 +45,6 @@ function App() {
             path="/individu/:id"
             element={
               <PageAffichage
-<<<<<<< HEAD
-                chemin="Individu,Pedro"
-=======
->>>>>>> 3f5aae0 (oui)
                 hrefs="/,/"
                 image="https://cdn.pixabay.com/photo/2018/10/16/14/48/panda-3751598_960_720.jpg"
                 type="individu"
@@ -70,10 +58,6 @@ function App() {
             path="/famille/:id"
             element={
               <PageAffichage
-<<<<<<< HEAD
-                chemin="Famille,Ursidae"
-=======
->>>>>>> 3f5aae0 (oui)
                 hrefs="/,/"
                 image="https://cdn.pixabay.com/photo/2018/10/16/14/48/panda-3751598_960_720.jpg"
                 type="famille"
