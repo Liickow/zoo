@@ -5,13 +5,6 @@ import Image from "./image";
 import Information from "./information";
 
 class PageAffichage extends React.Component<any,any> {
-<<<<<<< HEAD
-  render() {
-    return (
-      <body>
-        <main>
-          <FilDariane valeurs={this.props.chemin} hrefs={this.props.hrefs} />
-=======
   state = {apiInfo:[],chemin:""}
   componentDidMount(){
     let urlService = "";
@@ -41,16 +34,11 @@ class PageAffichage extends React.Component<any,any> {
       <body>
         <main>
           <FilDariane valeurs={this.state.chemin} hrefs={this.props.hrefs} />
->>>>>>> 3f5aae0 (oui)
           <section>
             <Image source={this.props.image} />
             <Information
               type={this.props.type}
-<<<<<<< HEAD
-              infos={this.props.informations}
-=======
               infos={this.state.apiInfo}
->>>>>>> 3f5aae0 (oui)
             />
           </section>
           <section id="paragraphe">
